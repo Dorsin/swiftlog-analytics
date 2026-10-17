@@ -13,44 +13,28 @@ The master analytical pipeline integrates 10 operational datasets sharing verifi
 
 *Note: The standalone reference dataset `SwiftLog_Suppliers.csv` is analyzed independently at the entity level to preserve strict relational data integrity, as it lacks direct foreign key bindings to products or dispatches.*
 
-## Exact Repository Directory Structure
+## Repository Directory Structure
 ```text
 Week5_DataScience_SwiftLog_DorianNJAMI/
 │
 ├── Data/
-│   ├── Cleaned_Datasets/
-│   │   ├── Cleaned_SwiftLog_Customers.csv
-│   │   ├── Cleaned_SwiftLog_Delivery_Perf.csv
-│   │   ├── Cleaned_SwiftLog_Employees.csv
-│   │   ├── Cleaned_SwiftLog_Inventory.csv
-│   │   ├── Cleaned_SwiftLog_Order_Items.csv
-│   │   ├── Cleaned_SwiftLog_Orders.csv
-│   │   ├── Cleaned_SwiftLog_Products.csv
-│   │   ├── Cleaned_SwiftLog_Returns.csv
-│   │   ├── Cleaned_SwiftLog_Shipments.csv
-│   │   ├── Cleaned_SwiftLog_Suppliers.csv
-│   │   ├── Cleaned_SwiftLog_Warehouses.csv
-│   │   ├── Feature_Engineered_Dataset.csv
-│   │   └── SwiftLog_Master_Analytical_Dataset.csv
-│   │
-│   └── Original_Datasets/
-│       ├── SwiftLog_Customers.csv
-│       ├── SwiftLog_Data_Dictionary.csv
-│       ├── SwiftLog_Delivery_Performance.csv
-│       ├── SwiftLog_Employees.csv
-│       ├── SwiftLog_Inventory.csv
-│       ├── SwiftLog_Order_Items.csv
-│       ├── SwiftLog_Orders.csv
-│       ├── SwiftLog_Products.csv
-│       ├── SwiftLog_Returns.csv
-│       ├── SwiftLog_Shipments.csv
-│       ├── SwiftLog_Suppliers.csv
-│       └── SwiftLog_Warehouses.csv
+│   ├── Cleaned_Datasets/         # Processed CSVs, Master Analytical Dataset, & Feature Engineered Dataset
+│   └── Original_Datasets/        # Raw 11 operational logistics CSV datasets
 │
 ├── Notebook/
-│   └── Week5_DataScience.ipynb
+│   ├── Week5_DataScience.ipynb   # Main Jupyter Notebook containing complete analysis & pipeline
+│   └── Week5_DataScience.html    # HTML export of the complete notebook
 │
 ├── Presentation/
+│   └── Executive_Presentation.pptx # Executive PowerPoint presentation (12 slides)
+│
 ├── Reports/
+│   ├── Data_Profiling_Report.html  # Automated profiling quality report
+│   ├── Executive_Summary.pdf       # Standalone executive report
+│   └── Technical_Report.pdf        # Complete technical report
+│
 ├── Visualizations/
+│   ├── Charts/                   # Extracted high-resolution PNG visualizations (Visual_01 to Visual_17)
+│   └── Dashboards/
+│
 └── README.md
